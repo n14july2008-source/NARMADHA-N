@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+int *ptr, n=5, i;
+ptr=(int *)calloc(n, sizeof(int));
+for(i=0; i<n; i++){
+scanf("%d", &ptr[i]);
+}
+printf("The elements of array are");
+for(i=0; i<n; i++){
+printf("%d", ptr[i]);
+}
